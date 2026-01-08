@@ -1,0 +1,100 @@
+cat > index.html <<'EOF'
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Saar Yachin — Cybersecurity • Homelab • Writing</title>
+  <meta name="description" content="Cybersecurity homelab builder. HomeSweetLab (YouTube, in progress). LoPTA project. Writer + legal translator." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="wrap">
+    <nav class="nav">
+      <a class="brand" href="#top">Saar Yachin</a>
+      <div class="navlinks">
+        <a href="#projects">Projects</a>
+        <a href="#homelab">Homelab</a>
+        <a href="#writing">Writing</a>
+        <a href="#links">Links</a>
+      </div>
+    </nav>
+
+    <section class="hero" id="top">
+      <p class="kicker">Cybersecurity • Homelab • Networking • Poetry&Prose </p>
+      <h1>Building a practical security lab — and documenting it.</h1>
+      <p class="lede">
+        I’m transitioning into cybersecurity with a hands-on focus: a real homelab, real tooling,
+        real notes, and a YouTube series (<strong>HomeSweetLab</strong>). I also come from a writing-heavy
+        background (legal translation + Hebrew writing/poetry) — which means I communicate clearly and document obsessively.
+      </p>
+
+      <div class="cta">
+        <a class="btn primary" href="cv.pdf" target="_blank" rel="noopener">Open CV (PDF)</a>
+        <a class="btn" href="#links">All links</a>
+      </div>
+
+      <div class="chips">
+        <span class="chip">SOC-minded</span>
+        <span class="chip">Linux + Networking</span>
+        <span class="chip">DFIR-curious</span>
+        <span class="chip">Homelab automation</span>
+      </div>
+    </section>
+  </header>
+
+  <main class="wrap">
+    <section class="card" id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="panel">
+          <h3>LoPTA — Log Parser & Triage Assistant</h3>
+          <p>A practical log parsing/triage tool. Turning messy logs into structured, actionable data.</p>
+          <a class="link" href="#" target="_blank" rel="noopener">LoPTA on GitHub →</a>
+        </div>
+
+        <div class="panel">
+          <h3>HomeSweetLab — YouTube (in progress)</h3>
+          <p>A channel about building and operating a cybersecurity homelab: architecture, failures, fixes, lessons learned.</p>
+          <a class="link" href="#" target="_blank" rel="noopener">HomeSweetLab on YouTube →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="homelab">
+      <h2>Homelab focus</h2>
+      <p>I treat my lab like a miniature production environment: segmentation, remote access, repeatable setup, documentation, and backups.</p>
+      <ul class="bullets">
+        <li>Network segmentation + controlled remote access</li>
+        <li>Virtualization + services + monitoring (iterative)</li>
+        <li>Security learning through building: logs, detection thinking, hardening</li>
+      </ul>
+    </section>
+
+    <section class="card" id="writing">
+      <h2>Writing & communication</h2>
+      <p>
+        My background is writing-intensive (legal translation + Hebrew writing/poetry).
+        In security, that becomes clean documentation, clear narratives, and strong communication.
+      </p>
+    </section>
+
+    <section class="card" id="links">
+      <h2>Links</h2>
+      <div class="links">
+        <a class="linkrow" href="cv.pdf" target="_blank" rel="noopener"><span>CV (PDF)</span><span class="arrow">↗</span></a>
+        <a class="linkrow" href="https://www.linkedin.com/in/saar-yachin" target="_blank" rel="noopener"><span>LinkedIn</span><span class="arrow">↗</span></a>
+        <a class="linkrow" href="https://www.github.com/saaryachin" target="_blank" rel="noopener"><span>GitHub</span><span class="arrow">↗</span></a>
+        <a class="linkrow" href="https://www.youtube.com/@HomeSweetLab" target="_blank" rel="noopener"><span>YouTube: HomeSweetLab</span><span class="arrow">↗</span></a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Saar Yachin • Built on GitHub Pages.</p>
+    </footer>
+  </main>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
+EOF
