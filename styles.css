@@ -58,12 +58,22 @@ a{color:inherit;text-decoration:none}
 }
 
 .avatar{
-  width:96px;height:96px;border-radius:999px;
+  width:128px;height:128px;border-radius:50%;
   object-fit:cover;
   border: 2px solid rgba(30,58,138,0.12);
   background: var(--cardTint);
 }
 
+.hero-left .identity {
+  margin-top: 16px;
+}
+
+.micro {
+  margin: 8px 0 0;
+  font-size: 13.5px;
+  color: var(--muted);
+  line-height: 1.45;
+}
 .identity{margin-top:12px}
 .name{margin:0;font-size:22px;line-height:1.2}
 .tagline{margin:6px 0 0;color:var(--muted);font-size:13.5px}
