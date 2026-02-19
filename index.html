@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Saar Yachin — Network Security • SOC/DFIR • Homelab</title>
-  <meta name="description" content="CCNA • Security+ • CySA+. Networking-first cybersecurity practitioner building hands-on homelab labs and tooling (LoPTA, vmctl-ng, RollCall). HomeSweetLab on YouTube." />
+  <title>Saar Yachin — SOC • DFIR • Security Engineering • Homelab</title>
+  <meta name="description" content="CCNA • Security+ • CySA+. Cybersecurity practitioner building and documenting a hands-on homelab. Automation, networking, security engineering, HomeSweetLab on YouTube." />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -31,8 +31,8 @@
 
           <div class="identity">
             <h1 class="name">Saar Yachin</h1>
-	    <p class="tagline">SOC • Security Engineering • Homelab • DFIR</p>
-	    <p class="micro">Hands-on labs: networking, security, automation & documentation — built to be practical.</p>
+	    <p class="tagline">SOC • DFIR • Security Engineering • Homelab</p>
+	    <p class="micro">CySA+, Security+ and CCNA certified security practitioner, with hands-on experience in SIEM monitoring, log analysis, packet inspection, incident triage and automation, looking for opportunities to collaborate, contribute, learn and share knowledge. </p>
           </div>
 
           <div class="iconbar" aria-label="Social links">
@@ -57,9 +57,9 @@
         </div>
 
         <div class="hero-right">
-          <p class="kicker">Cybersecurity from the Comfort of HomeSweetLab</p>
+          <p class="kicker">Cozy Cybersecurity from the Comfort of HomeSweetLab</p>
           <h2 class="headline">Building a practical security lab — and documenting it.</h2>
-          <p class="lede">CCNA • Security+ • CySA+. I build and operate a hands-on homelab focused on network security, monitoring, and incident-response fundamentals — and I document what I learn through tooling and clear write-ups (and soon, HomeSweetLab on YouTube).</p>
+          <p class="lede">I build and operate a Proxmox-based hands-on cybersecurity homelab, focused on network security, monitoring, log-parsing, incident, reporting workflows and automation. I document my lab on my YouTube channel HomeSweetLab. Check out my security automation and Proxmox-centered homelab tools below.</p>
 
           <div class="cta">
             <a class="btn primary" href="cv.pdf" target="_blank" rel="noopener">Open CV (PDF)</a>
@@ -70,7 +70,7 @@
 	    <span class="chip">Security+</span>
 	    <span class="chip">CySA+</span>
 	    <span class="chip">SOC-minded</span>
-	    <span class="chip">DFIR track</span>
+      <span class="chip">DFIR-oriented</span>
 	    <span class="chip">Linux</span>
 	    <span class="chip">Labbing & tinkering</span>
 	    <span class="chip">Logs & detection</span>
@@ -107,18 +107,18 @@
     <section class="section" id="projects">
       <div class="section-head">
 	<h3>Projects</h3>
-	<p class="muted">Tooling for log ingestion, analysis and homelab automation.</p>
+	<p class="muted">Tooling for log ingestion and analysis, automated vulnerability scanning and threat detection workflows, and homelab automation.</p>
       </div>
 
       <div class="grid2">
         <article class="card">
           <h4>
             <a class="link" href="https://github.com/saaryachin/sroq" target="_blank" rel="noopener">
-              Sroq — Vulnerability Reporting &amp; Risk Scoring
+              Sroq — Vulnerability Reporting Tool
             </a>
           </h4>
           <p class="muted">
-            A CLI-based vulnerability reporting tool built around <code>nmap -sV --script vulners</code>. Sroq aggregates unique CVEs per host, applies deterministic sorting, and computes weighted risk metrics to produce clean, automation-ready reports (JSON, CSV, Excel, PNG).
+            A CLI-based vulnerability reporting tool built around Nmap and Vulners scripts. Sroq aggregates unique CVEs per host, applies deterministic sorting, and computes weighted risk metrics to produce clean, automation-ready reports (JSON, CSV, Excel, PNG), with optional email reports.
           </p>
 
           <hr style="border:none;border-top:1px solid #e5e5e5;margin:1rem 0;">
@@ -141,21 +141,21 @@
         <a class="link" href="https://github.com/saaryachin/vmctl-ng" target="_blank" rel="noopener">
           <strong>vmctl-ng</strong>
         </a>
-        — control Proxmox VMs/LXCs over SSH from a jump host
+        — control Proxmox VMs/LXCs over SSH from a jump server.
       </li>
 
       <li>
         <a class="link" href="https://github.com/saaryachin/RollCall" target="_blank" rel="noopener">
           <strong>RollCall</strong>
         </a>
-        — lightweight host discovery / inventory grouped by network, designed for a homelab
+        — lightweight host discovery tool with grouping by network, designed for a homelab.
       </li>
 
       <li>
         <a class="link" href="https://github.com/saaryachin/Scriven" target="_blank" rel="noopener">
           <strong>Scriven</strong>
         </a>
-        — minimal markdown lab log + AI summaries from date ranges
+        — minimal markdown lab logger with periodic/event-based AI-generated summaries.
       </li>
     </ul>
 	  <a class="link" href="https://github.com/saaryachin" target="_blank" rel="noopener">Browse on GitHub →</a>
@@ -166,15 +166,16 @@
     <section class="section" id="homelab">
       <div class="section-head">
         <h3>Homelab philosophy</h3>
-        <p class="muted">A homelab is a place to experiment, learn, break things, and fix them (and repeat), experience the lows of what-went-wrong and the highs of having-fixed-it. My homelab is where I practice real-world skills in an enterprise-like environment: secure network design, monitoring, log analysis and automation. While at it I make sure to have fun, be creative and get a little poetry out of it. More practically speaking, I meddle with: </p>
+        <p class="muted">A homelab is a place to experiment, learn, break things, and fix them (and repeat), a playground to experience the lows of what-went-wrong and the highs of having-fixed-it. My homelab is where I practice real-world skills in an enterprise-like environment: secure network design, system hardening, monitoring, traffic and log analysis, pentesting, detection, and automation. In building and using my lab, I make sure to have fun, be creative and get a little poetry out of it. More practically speaking, I meddle with: </p>
       </div>
       <ul class="bullets">
         <li>Server administration and hardening</li>
         <li>Applied security principles - architecture and implementation</li>
         <li>Network segmentation + controlled remote access</li>
         <li>Virtualization and services (Proxmox, containers, monitoring)</li>
-	<li>Log-centric workflows: parsing, triage, detection thinking</li>
-	<li>Automation with Python/Bash (and selective AI assistance)</li>
+        <li>Log-centric workflows: parsing, triage, detection thinking</li>
+        <li>Traffic capture and analysis</li>
+        <li>Automation with Python/Bash (and selective AI assistance)</li>
         <li>Self expression and imagination</li>
       </ul>
     </section>
