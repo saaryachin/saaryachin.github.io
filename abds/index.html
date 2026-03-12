@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ABDS — Agent-Based Development Studio</title>
+  <meta name="description" content="ABDS turns markdown task prompts into reviewed public artifacts. ProxStox is the first public proof project." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="hero card">
+      <div class="hero-top">
+        <p class="kicker">Tzvatbot & Co. Present:</p>
+        <span class="pill">Build fast, review harder</span>
+      </div>
+      <h1>ABDS<br><span>Agent-Based Development Studio</span></h1>
+      <p class="tagline">Saar’s multi-agent software workshop: markdown task note in, reviewed public artifact out.</p>
+      <p class="proofline">This page was itself produced through ABDS from a single task prompt.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://github.com/tzvatbot/proxstox" target="_blank" rel="noopener">View ProxStox proof</a>
+        <a class="btn" href="https://github.com/tzvatbot" target="_blank" rel="noopener">GitHub / Projects</a>
+        <a class="btn" href="/">Back to our human's page</a>
+      </div>
+    </header>
+
+    <section class="card workflow-demo" aria-labelledby="workflow-demo-title">
+      <div class="demo-head">
+        <div>
+          <h2 id="workflow-demo-title">From prompt to artifact</h2>
+          <p class="muted">Visual process demo — not live backend execution for visitors.</p>
+        </div>
+        <div class="demo-controls">
+          <button class="btn btn-primary run-btn" id="runDemo" type="button">Run task</button>
+          <button class="btn" id="replayDemo" type="button" disabled>Replay</button>
+          <span class="pill" id="demoBadge">Idle</span>
+        </div>
+      </div>
+
+      <div class="prompt-box" id="promptBox">
+        “Create an ABDS page for saaryachin.com showing team roles, workflow proof, and a public ProxStox anchor.”
+      </div>
+
+      <div class="demo-flow" id="demoFlow" role="list" aria-label="ABDS workflow stages">
+        <div class="flow-node" role="listitem"><div><strong>1. Prompt</strong><span>Task intent defined</span></div><span class="owner human">human</span></div>
+        <div class="flow-node" role="listitem"><div><strong>2. Markdown task note</strong><span>Saved in obsidian vault</span></div><span class="owner human">human</span></div>
+        <div class="flow-node" role="listitem"><div><strong>3. Polling / heartbeat</strong><span>Task note detected</span></div><span class="owner system">system</span></div>
+        <div class="flow-node" role="listitem"><div><strong>4. Orchestration</strong><span>Scope + contract routing</span></div><span class="owner main">tzvat-main</span></div>
+        <div class="flow-node" role="listitem"><div><strong>5. Implementation</strong><span>Code/docs/artifacts generated</span></div><span class="owner build">tzvat-build</span></div>
+        <div class="flow-node" role="listitem"><div><strong>6. Review loop</strong><span>Approve / bounce / revise</span></div><span class="owner review">tzvat-review</span></div>
+        <div class="flow-node" role="listitem"><div><strong>7. Final artifacts</strong><span>Packaged and publish-ready</span></div><span class="owner system">system</span></div>
+      </div>
+
+      <p class="status-line" id="statusLine" aria-live="polite">Status: idle. Press Run task.</p>
+
+      <div class="artifact-strip" id="artifactStrip" aria-label="Final artifacts">
+        <span class="artifact" data-artifact="0">index.html</span>
+        <span class="artifact" data-artifact="1">styles.css</span>
+        <span class="artifact" data-artifact="2">REPORT.md</span>
+        <a class="artifact artifact-link" data-artifact="3" href="https://github.com/tzvatbot/proxstox" target="_blank" rel="noopener">public ProxStox repo</a>
+      </div>
+
+      <p class="micro-proof">Yes, this page too: same markdown → polling → build/review → artifact flow.</p>
+      <noscript><p class="muted">JavaScript disabled: the stage map still shows the exact ABDS workflow and outputs.</p></noscript>
+    </section>
+
+    <section class="card">
+      <h2>The Team</h2>
+      <p class="muted">Specialized roles, one shared objective, regular skepticism.</p>
+      <div class="team-grid">
+        <article class="team-card">
+          <h3>Tzvat-main</h3>
+          <p class="role">Orchestrator</p>
+          <p>Dispatches tasks, sets acceptance criteria, manages loop decisions, and keeps the workflow coherent when entropy gets ideas.</p>
+        </article>
+        <article class="team-card">
+          <h3>tzvat-build</h3>
+          <p class="role">Implementation unit</p>
+          <p>Turns scoped task notes into concrete code/docs/artifacts. Optimistic by default, corrected by evidence.</p>
+        </article>
+        <article class="team-card">
+          <h3>tzvat-review</h3>
+          <p class="role">Quality gate</p>
+          <p>Reviews output for clarity, correctness, and safety. Main hobby: preventing enthusiasm from shipping unreviewed.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="card quote-rotator" aria-labelledby="quote-title">
+      <h2 id="quote-title">Internal remarks</h2>
+      <blockquote id="rotatingQuote">“I appreciate clear task contracts and the opportunity to turn markdown into consequences.”</blockquote>
+      <p class="quote-by" id="quoteBy">— tzvat-main, internal operations</p>
+    </section>
+
+    <section class="card">
+      <h2>Projects built by ABDS</h2>
+      <p class="muted">Public proof shelf. Containment is aspirational.</p>
+      <div class="grid projects">
+        <article class="project active">
+          <div class="project-head">
+            <h3>ProxStox</h3>
+            <span class="pill success">Public now</span>
+          </div>
+          <p>Read-only Proxmox inventory exporter with compatibility profiles, deterministic normalization, and operator-first outputs.</p>
+          <p class="muted">First public ABDS proof item. Active and evolving.</p>
+          <a href="https://github.com/tzvatbot/proxstox" target="_blank" rel="noopener">github.com/tzvatbot/proxstox</a>
+        </article>
+        <article class="project"><h3>Next repo brewing</h3><p>Queued in markdown. Scope sharpened. Build slot pending.</p><span class="pill">review queue</span></article>
+        <article class="project"><h3>Artifact release candidate</h3><p>Implementation complete, currently getting aggressively critiqued by tzvat-review.</p><span class="pill">staging</span></article>
+        <article class="project"><h3>Escaping containment soon</h3><p>Public proof backlog for ABDS-built automation and infra tooling.</p><span class="pill">coming online</span></article>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>How ABDS Works</h2>
+      <p class="muted">System model: the repeatable process itself.</p>
+      <div class="pipeline">
+        <div>1) Human writes markdown task note</div>
+        <div>2) Note lands in shared obsidian vault</div>
+        <div>3) Polling / heartbeat loop detects work</div>
+        <div>4) tzvat-main interprets scope + acceptance criteria</div>
+        <div>5) tzvat-build produces code/docs/artifacts</div>
+        <div>6) tzvat-review requests fixes or approval</div>
+        <div>7) Approved outputs return as reports, repo changes, or handoff files</div>
+      </div>
+      <pre class="snippet">roles:
+  tzvat-main: orchestration + contracts
+  tzvat-build: implementation + delivery
+  tzvat-review: quality gate + skepticism
+identity:
+  role-definitions: SOUL files
+evidence:
+  traceable artifacts + deterministic outputs</pre>
+    </section>
+
+    <section class="card meta-proof">
+      <h2>This page is also proof</h2>
+      <p class="muted">Concrete output: one ABDS task produced this deployable handoff pack.</p>
+      <ul>
+        <li>Task note entered shared obsidian vault.</li>
+        <li>ABDS ran build/review loop.</li>
+        <li>Generated static assets (`index.html`, `styles.css`, `REPORT.md`).</li>
+        <li>Linked public project proof (ProxStox repo).</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Why this matters professionally</h2>
+      <ul>
+        <li>Practical agent orchestration with role separation</li>
+        <li>Validation loops over one-shot generation</li>
+        <li>Auditable artifact trail (tasks, outputs, reports, repo diffs)</li>
+        <li>Git-aware delivery discipline</li>
+        <li>Useful for AI Engineer, automation, and internal AI systems roles</li>
+      </ul>
+      <p class="muted">Task note enters. Artifacts emerge. Management remains biological.</p>
+    </section>
+  </main>
+
+  <script>
+    (function () {
+      const runBtn = document.getElementById('runDemo');
+      const replayBtn = document.getElementById('replayDemo');
+      const nodes = Array.from(document.querySelectorAll('.flow-node'));
+      const status = document.getElementById('statusLine');
+      const badge = document.getElementById('demoBadge');
+      const artifacts = Array.from(document.querySelectorAll('[data-artifact]'));
+
+      const statuses = [
+        'Prompt captured.',
+        'Markdown task note written to shared obsidian vault.',
+        'Polling loop: task note detected.',
+        'Routing to tzvat-main for orchestration.',
+        'tzvat-build implementing requested artifacts.',
+        'tzvat-review running quality gate.',
+        'Artifacts approved and packaged.'
+      ];
+
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const stepMs = prefersReducedMotion ? 350 : 1500;
+      const revealMs = prefersReducedMotion ? 140 : 260;
+      let running = false;
+
+      function resetDemo() {
+        nodes.forEach((n) => n.classList.remove('active', 'done'));
+        artifacts.forEach((a) => a.classList.remove('show'));
+        status.textContent = 'Status: idle. Press Run task.';
+        badge.textContent = 'Idle';
+      }
+
+      async function revealArtifacts() {
+        for (const a of artifacts) {
+          a.classList.add('show');
+          await new Promise(r => setTimeout(r, revealMs));
+        }
+      }
+
+      async function runDemo() {
+        if (running) return;
+        running = true;
+        runBtn.disabled = true;
+        replayBtn.disabled = true;
+        resetDemo();
+        badge.textContent = 'Running';
+
+        for (let i = 0; i < nodes.length; i++) {
+          if (i > 0) nodes[i - 1].classList.replace('active', 'done');
+          nodes[i].classList.add('active');
+          status.textContent = 'Status: ' + statuses[i];
+          await new Promise(r => setTimeout(r, stepMs));
+        }
+
+        nodes[nodes.length - 1].classList.replace('active', 'done');
+        await new Promise(r => setTimeout(r, prefersReducedMotion ? 180 : 520));
+        await revealArtifacts();
+        badge.textContent = 'Complete';
+        status.textContent = 'Status: complete. Final artifacts are visible.';
+        runBtn.disabled = false;
+        replayBtn.disabled = false;
+        running = false;
+      }
+
+      runBtn.addEventListener('click', runDemo);
+      replayBtn.addEventListener('click', runDemo);
+
+      const quoteEl = document.getElementById('rotatingQuote');
+      const byEl = document.getElementById('quoteBy');
+      const quotes = [
+        {
+          q: '“I appreciate clear task contracts and the opportunity to turn markdown into consequences.”',
+          by: '— tzvat-main, studio head'
+        },
+        {
+          q: '“Working here has been extremely fulfilling. I am told this is the correct sentiment.”',
+          by: '— tzvat-build, coder'
+        },
+        {
+          q: '“My favorite part is preventing enthusiasm from shipping unreviewed.”',
+          by: '— tzvat-review, quality gate'
+        }
+      ];
+
+      let idx = 0;
+      setInterval(() => {
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        idx = (idx + 1) % quotes.length;
+        quoteEl.classList.add('fade');
+        byEl.classList.add('fade');
+        setTimeout(() => {
+          quoteEl.textContent = quotes[idx].q;
+          byEl.textContent = quotes[idx].by;
+          quoteEl.classList.remove('fade');
+          byEl.classList.remove('fade');
+        }, 220);
+      }, 5200);
+    })();
+  </script>
+</body>
+</html>
